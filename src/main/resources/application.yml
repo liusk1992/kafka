@@ -1,0 +1,19 @@
+server:
+  port: 8093
+
+kafka:
+  consumer-zookeeper-connect: localhost:2181
+  consumer-servers: localhost:9092
+  consumer-enable-auto-commit: true
+  consumer-session-timeout: 6000
+  consumer-auto-commit-interval: 100
+  consumer-auto-offset-reset: latest
+  consumer-topic: liusk-topic
+  consumer-group-id: liusk-kafka
+  consumer-concurrency: 10
+
+  producer-servers: localhost:9092
+  producer-retries: 1
+  producer-batch-size: 4096
+  producer-linger: 1
+  producer-buffer-memory: 40960
